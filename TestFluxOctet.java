@@ -7,7 +7,7 @@ do {
 	nbentier = sc1.nextInt();
 	System.out.print( "Double? ");
 	nbdouble = sc1.nextDouble();
-	dos.writeInt(nbentier);
+	dos.writeInt(mojrir);
 	dos.writeDouble(nbdouble);
 	System.out.println("Continuer ? O/N");
 } while (sc1.next("[oOnN]").toUpperCase().equals("O"));
