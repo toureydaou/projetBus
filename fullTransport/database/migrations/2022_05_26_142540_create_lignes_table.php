@@ -15,7 +15,7 @@ class CreateLignesTable extends Migration
     {
         Schema::create('lignes', function (Blueprint $table) {
             $table->bigIncrements('idLigne');
-            $table->integereger('prix');
+            $table->integer('prix');
             $table->string('depart');
             $table->string('arrivee');
             $table->softDeletes();

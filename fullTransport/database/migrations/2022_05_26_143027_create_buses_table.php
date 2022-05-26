@@ -15,7 +15,7 @@ class CreateBusesTable extends Migration
     {
         Schema::create('buses', function (Blueprint $table) {
             $table->bigIncrements('idBus');
-            $table->integereger('nbPlaces');
+            $table->integer('nbPlaces');
             $table->string('marque');
             $table->boolean('climatisation');
             $table->string('statut');

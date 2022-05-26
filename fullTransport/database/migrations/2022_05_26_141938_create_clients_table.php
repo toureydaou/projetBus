@@ -18,7 +18,7 @@ class CreateClientsTable extends Migration
             $table->string('nom');
             $table->string('prenom');
             $table->date('dateNaissance');
-            $table->integereger('telephone');
+            $table->integer('telephone');
             $table->softDeletes();
             $table->timestamps();
         });

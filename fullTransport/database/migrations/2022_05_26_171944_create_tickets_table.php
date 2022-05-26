@@ -21,9 +21,9 @@ class CreateTicketsTable extends Migration
             $table->integer('prix');
             $table->string('statut');
             $table->integer('idVoyage');
-            $table->foreign('idVoyage')->references('idVoyage')->on('Voyage')->onDelete('set null')->onUpdate('cascade');
+            $table->foreign('idVoyage')->references('idVoyage')->on('voyages')->onDelete('set null')->onUpdate('cascade');
             $table->integer('idClient');
-            $table->foreign('idClient')->references('idClient')->on('Colis')->onDelete('set null')->onUpdate('cascade');
+            $table->foreign('idClient')->references('idClient')->on('clients')->onDelete('set null')->onUpdate('cascade');
             $table->softDeletes();
             $table->timestamps();
         });

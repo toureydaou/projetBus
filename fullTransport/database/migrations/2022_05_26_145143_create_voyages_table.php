@@ -18,9 +18,9 @@ class CreateVoyagesTable extends Migration
             $table->date('dateVoyage');
             $table->time('heure_depart');
             $table->integer('idBus');
-            $table->foreign('idBus')->references('idBus')->on('Buses')->onDelete('set null')->onUpdate('cascade');
+            $table->foreign('idBus')->references('idBus')->on('buses')->onDelete('set null')->onUpdate('cascade');
             $table->integer('idLigne');
-            $table->foreign('idLigne')->references('idLigne')->on('Lignes')->onDelete('set null')->onUpdate('cascade');
+            $table->foreign('idLigne')->references('idLigne')->on('lignes')->onDelete('set null')->onUpdate('cascade');
             $table->softDeletes();
             $table->timestamps();
         });
