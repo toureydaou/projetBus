@@ -11,7 +11,7 @@ class Client extends Model
     use HasFactory;
     use softDeletes;
 
-    protected $fillable = ['nbPlaces', 'marque', 'climatisation', 'statut'];
+    protected $fillable = ['nom', 'prenom', 'dateNaissance', 'telephone'];
     protected $primaryKey = 'idClient';
 
     public function colis() {
