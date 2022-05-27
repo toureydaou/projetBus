@@ -1,2 +1,8 @@
 # projetBus
-Projet d'une application d'achat de tickets en ligne dont le chef de projet et commandant tout puissant est : Samrou
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 9a9142a21bd0e605bf944b54441154305e362976
+Projet d'une application d'achat de tickets en ligne.

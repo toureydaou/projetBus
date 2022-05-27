@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<project name="" company="" manager="Groupe 4" phase="" project-start="20211010T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Travaill&#xE9;" description="Un jour de travail normal"/>
+      <day-type id="1" name="Ch&#xF4;m&#xE9;" description="Un jour ch&#xF4;m&#xE9; normal"/>
+      <day-type id="2" name="Utiliser la base" description="Utilise un jour du calendrier de base"/>
+    </day-types>
+    <calendar id="1" name="D&#xE9;faut">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Diagramme de cas d'utilisation" note="" work="864000" start="20211010T000000Z" end="20211022T170000Z" work-start="20211011T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="2" name="Diagramme de classes" note="" work="864000" start="20211121T000000Z" end="20211203T170000Z" work-start="20211122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20211121T000000Z"/>
+    </task>
+    <task id="3" name="Diagramme BPMN (envoi colis)" note="" work="288000" start="20220311T000000Z" end="20220324T170000Z" work-start="20220311T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20220311T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="4" name="Diagramme BPMN (achat ticket)" note="" work="288000" start="20220311T000000Z" end="20220324T170000Z" work-start="20220311T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20220311T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="5" name="Diagramme BPMN(gestion des lignes)" note="" work="288000" start="20220311T000000Z" end="20220324T170000Z" work-start="20220311T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20220311T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="6" name="Diagramme de s&#xE9;quences(envoi colis)" note="" work="201600" start="20220328T000000Z" end="20220405T170000Z" work-start="20220328T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20220328T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="2" type="FS"/>
+        <predecessor id="1" predecessor-id="3" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="7" name="Diagramme de s&#xE9;quences(achat ticket)" note="" work="201600" start="20220328T000000Z" end="20220405T170000Z" work-start="20220328T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20220328T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="4" type="FS"/>
+        <predecessor id="1" predecessor-id="2" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="8" name="Diagramme de s&#xE9;quences(gestion des lignes)" note="" work="201600" start="20220328T000000Z" end="20220405T170000Z" work-start="20220328T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20220328T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="5" type="FS"/>
+        <predecessor id="1" predecessor-id="2" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="9" name="Codage des fonctions (envoi colis) JAVA-Android" note="" work="604800" start="20220410T000000Z" end="20220509T170000Z" work-start="20220411T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20220410T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="13" type="FS"/>
+        <predecessor id="1" predecessor-id="6" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="10" name="Codage des fonctions (achat tickets) JAVA-Android" note="" work="604800" duration="604800" start="20220411T000000Z" end="20220509T170000Z" work-start="20220411T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+      <constraint type="start-no-earlier-than" time="20220411T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="13" type="FS"/>
+        <predecessor id="1" predecessor-id="7" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="11" name="Codage des fonctions (gestion des lignes)JAVA-Android" note="" work="864000" duration="864000" start="20220411T000000Z" end="20220520T170000Z" work-start="20220411T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+      <constraint type="start-no-earlier-than" time="20220411T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="13" type="FS"/>
+        <predecessor id="1" predecessor-id="8" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="12" name="Exp&#xE9;rimentation de l'API Tmoney" note="" work="259200" start="20220501T000000Z" end="20220506T120000Z" work-start="20220502T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20220501T000000Z"/>
+    </task>
+    <task id="13" name="Phase de mise au point 1" note="" work="115200" start="20220407T000000Z" end="20220408T104000Z" work-start="20220407T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20220407T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="8" type="FS"/>
+        <predecessor id="1" predecessor-id="7" type="FS"/>
+        <predecessor id="1" predecessor-id="6" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="14" name="Phase de mise au point 2" note="" work="86400" duration="86400" start="20220603T000000Z" end="20220607T170000Z" work-start="20220603T080000Z" percent-complete="22" priority="0" type="normal" scheduling="fixed-duration">
+      <constraint type="start-no-earlier-than" time="20220603T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="15" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="15" name="Test unitaire des fonctions " note="" work="259200" start="20220521T000000Z" end="20220525T170000Z" work-start="20220523T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20220521T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="11" type="FS"/>
+        <predecessor id="1" predecessor-id="10" type="FS"/>
+        <predecessor id="1" predecessor-id="9" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="16" name="Test d'assemblage des fonctions" note="" work="259200" start="20220525T170000Z" end="20220530T170000Z" work-start="20220526T080000Z" percent-complete="12" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="15" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="17" name="Greffage de l'API Tmoney au projet" note="" work="57600" duration="28800" start="20220506T120000Z" end="20220509T120000Z" work-start="20220506T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+      <predecessors>
+        <predecessor id="1" predecessor-id="12" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="18" name="R&#xE9;alisation de la maquette de l'IHM cot&#xE9; desktop" note="" work="57600" start="20220607T170000Z" end="20220608T142000Z" work-start="20220608T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="14" type="FS"/>
+        <predecessor id="1" predecessor-id="16" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="19" name="R&#xE9;alisation de la maquette de l'IHM cot&#xE9; android" note="" work="28800" start="20220607T170000Z" end="20220608T104000Z" work-start="20220608T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="14" type="FS"/>
+        <predecessor id="1" predecessor-id="16" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="20" name="R&#xE9;alisation de l'IHM cot&#xE9; desktop" note="" work="28800" duration="576000" start="20220608T142000Z" end="20220706T142000Z" work-start="20220608T142000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+      <predecessors>
+        <predecessor id="1" predecessor-id="18" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="21" name="R&#xE9;alisation de l'IHM cot&#xE9; android" note="" work="28800" duration="288000" start="20220608T104000Z" end="20220622T104000Z" work-start="20220608T104000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+      <predecessors>
+        <predecessor id="1" predecessor-id="19" type="FS"/>
+      </predecessors>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources>
+    <resource id="1" name="Tour&#xE9;-Ydaou" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="2" name="Samrou" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="3" name="Aziz" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+  </resources>
+  <allocations>
+    <allocation task-id="21" resource-id="1" units="10"/>
+    <allocation task-id="19" resource-id="1" units="100"/>
+    <allocation task-id="18" resource-id="1" units="100"/>
+    <allocation task-id="16" resource-id="1" units="100"/>
+    <allocation task-id="17" resource-id="1" units="100"/>
+    <allocation task-id="14" resource-id="1" units="33"/>
+    <allocation task-id="15" resource-id="1" units="100"/>
+    <allocation task-id="12" resource-id="1" units="100"/>
+    <allocation task-id="10" resource-id="1" units="100"/>
+    <allocation task-id="13" resource-id="1" units="100"/>
+    <allocation task-id="6" resource-id="1" units="100"/>
+    <allocation task-id="3" resource-id="1" units="100"/>
+    <allocation task-id="2" resource-id="1" units="100"/>
+    <allocation task-id="1" resource-id="1" units="100"/>
+    <allocation task-id="20" resource-id="2" units="3"/>
+    <allocation task-id="19" resource-id="2" units="100"/>
+    <allocation task-id="18" resource-id="2" units="100"/>
+    <allocation task-id="16" resource-id="2" units="100"/>
+    <allocation task-id="17" resource-id="2" units="100"/>
+    <allocation task-id="14" resource-id="2" units="33"/>
+    <allocation task-id="15" resource-id="2" units="100"/>
+    <allocation task-id="12" resource-id="2" units="100"/>
+    <allocation task-id="9" resource-id="2" units="100"/>
+    <allocation task-id="13" resource-id="2" units="100"/>
+    <allocation task-id="7" resource-id="2" units="100"/>
+    <allocation task-id="4" resource-id="2" units="100"/>
+    <allocation task-id="2" resource-id="2" units="100"/>
+    <allocation task-id="1" resource-id="2" units="100"/>
+    <allocation task-id="20" resource-id="3" units="3"/>
+    <allocation task-id="19" resource-id="3" units="100"/>
+    <allocation task-id="18" resource-id="3" units="100"/>
+    <allocation task-id="16" resource-id="3" units="100"/>
+    <allocation task-id="14" resource-id="3" units="33"/>
+    <allocation task-id="15" resource-id="3" units="100"/>
+    <allocation task-id="11" resource-id="3" units="100"/>
+    <allocation task-id="13" resource-id="3" units="100"/>
+    <allocation task-id="8" resource-id="3" units="100"/>
+    <allocation task-id="5" resource-id="3" units="100"/>
+    <allocation task-id="2" resource-id="3" units="100"/>
+    <allocation task-id="1" resource-id="3" units="100"/>
+  </allocations>
+</project>
