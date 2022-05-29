@@ -11,7 +11,7 @@ class Ligne extends Model
     use HasFactory;
     use softDeletes;
 
-    protected $fillable = ['prix', 'depart', 'arrivee'];
+    protected $fillable = ['prix', 'depart', 'arrivee', 'arrets'];
     protected $primaryKey = 'idLigne';
 
     public function voyages() {

@@ -18,6 +18,7 @@ class CreateLignesTable extends Migration
             $table->integer('prix');
             $table->string('depart');
             $table->string('arrivee');
+            $table->json('arrets');
             $table->softDeletes();
             $table->timestamps();
         });
