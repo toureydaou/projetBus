@@ -19,8 +19,8 @@ class CreateColisTable extends Migration
             $table->string('nomDestinaire');
             $table->integer('telephoneDestinataire');
             $table->integer('idVoyage');
-            $table->foreign('idVoyage')->references('idVoyage')->on('voyages')->onDelete('set null')->onUpdate('cascade');
             $table->integer('idClient');
+            $table->foreign('idVoyage')->references('idVoyage')->on('voyages')->onDelete('set null')->onUpdate('cascade');
             $table->foreign('idClient')->references('idClient')->on('clients')->onDelete('set null')->onUpdate('cascade');
             $table->softDeletes();
             $table->timestamps();
