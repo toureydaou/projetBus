@@ -14,7 +14,8 @@ class ClientController extends Controller
      */
     public function index()
     {
-        //
+        $clients = Client::all();
+        return view('clients.index')->with('listeClients', $clients);
     }
 
     /**
@@ -24,7 +25,7 @@ class ClientController extends Controller
      */
     public function create()
     {
-        //
+        return view('clients.create');
     }
 
     /**
@@ -35,7 +36,12 @@ class ClientController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $client = Client::create(['nom' => $request["nom"],
+            'prenom' => $request["prenom"],
+            'dateNaissance' => $request["dateNaissance"],
+            'telephone' => $request["telephone"]]);
+        $client->save();
+        return redirect()->route('listeClients');
     }
 
     /**
@@ -46,7 +52,7 @@ class ClientController extends Controller
      */
     public function show(Client $client)
     {
-
+        return view('clients.show')->with('client', $client);
     }
 
     /**
@@ -57,7 +63,7 @@ class ClientController extends Controller
      */
     public function edit(Client $client)
     {
-        //
+        return view('clients.edit',)->with('client', $client);
     }
 
     /**
@@ -69,7 +75,12 @@ class ClientController extends Controller
      */
     public function update(Request $request, Client $client)
     {
-        //
+        $client->nom = $request["nom"];
+        $client->prenom = $request["prenom"];
+        $client->dateNaissance = $request["dateNaissance"];
+        $client->telephone = $request["telephone"];
+        $client->save();
+        return redirect()->route('listeClients');
     }
 
     /**
@@ -80,6 +91,7 @@ class ClientController extends Controller
      */
     public function destroy(Client $client)
     {
-        //
+        $client->delete();
+        return redirect()->route('listeClients');
     }
 }
