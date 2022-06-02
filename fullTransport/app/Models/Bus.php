@@ -11,7 +11,7 @@ class Bus extends Model
     use HasFactory;
     use softDeletes;
 
-    protected $fillable = ['nbPlaces', 'marque', 'climatisation', 'statut'];
+    protected $fillable = ['nbPlaces', 'plaque','marque', 'climatisation', 'statut'];
     protected $primaryKey = 'idBus';
 
     public function voyages() {

@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
 Route::get('clients', 'App\Http\Controllers\ClientController@index')->name('listeClients');
 Route::get('client/creer', 'App\Http\Controllers\ClientController@create')->name('creationClient');
 Route::post('client/enregistrer', 'App\Http\Controllers\ClientController@store')->name('enregistrementClient');
@@ -30,3 +34,6 @@ Route::post('voyage/enregistrer', 'App\Http\Controllers\VoyageController@store')
 Route::get('voyage', 'App\Http\Controllers\VoyageController@show')->name('afficherVoyage');
 Route::put('voyage/maj', 'App\Http\Controllers\VoyageController@show')->name('majVoyage');
 Route::delete('voyage/annuler', 'App\Http\Controllers\VoyageController@destroy')->name('annulationVoyage');
+
+
+require __DIR__.'/auth.php';
