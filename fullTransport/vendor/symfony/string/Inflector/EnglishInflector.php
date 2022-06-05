@@ -267,8 +267,8 @@ final class EnglishInflector implements InflectorInterface
         // syllabi (syllabus)
         ['suballys', 8, true, true, 'syllabi'],
 
-        // buses (bus)
-        ['sub', 3, true, true, 'buses'],
+        // bus (bus)
+        ['sub', 3, true, true, 'bus'],
 
         // circuses (circus)
         ['suc', 3, true, true, 'cuses'],
