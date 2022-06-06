@@ -11,7 +11,7 @@ class Voyage extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected $fillable = ['dateVoyage', 'heure_depart'];
+    protected $fillable = ['dateVoyage', 'heure_depart', 'ticketsVendus', 'idBus', 'idLigne'];
     protected $primaryKey = 'idVoyage';
 
     public function ticket() {
