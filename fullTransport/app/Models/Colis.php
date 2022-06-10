@@ -12,7 +12,7 @@ class Colis extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected $fillable = ['contenu', 'nomDestinataire', 'telephoneDestinataire'];
+    protected $fillable = ['contenu', 'nomDestinataire', 'telephoneDestinataire', 'idVoyage', 'idClient'];
     protected $primaryKey = 'idColis';
 
     public function voyage() {

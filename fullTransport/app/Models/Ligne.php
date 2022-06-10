@@ -17,4 +17,5 @@ class Ligne extends Model
     public function voyages() {
         return $this->hasMany('app/Models/Voyage', 'idVoyage');
     }
+
 }

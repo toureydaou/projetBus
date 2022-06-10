@@ -1,71 +1,89 @@
 <?php return array (
-  'barryvdh/laravel-debugbar' => 
+  'barryvdh/laravel-debugbar' =>
   array (
-    'providers' => 
+    'providers' =>
     array (
       0 => 'Barryvdh\\Debugbar\\ServiceProvider',
     ),
-    'aliases' => 
+    'aliases' =>
     array (
       'Debugbar' => 'Barryvdh\\Debugbar\\Facades\\Debugbar',
     ),
   ),
-  'facade/ignition' => 
+  'barryvdh/laravel-dompdf' =>
   array (
-    'providers' => 
+    'providers' =>
+    array (
+      0 => 'Barryvdh\\DomPDF\\ServiceProvider',
+    ),
+    'aliases' =>
+    array (
+      'PDF' => 'Barryvdh\\DomPDF\\Facade\\Pdf',
+    ),
+  ),
+  'facade/ignition' =>
+  array (
+    'providers' =>
     array (
       0 => 'Facade\\Ignition\\IgnitionServiceProvider',
     ),
-    'aliases' => 
+    'aliases' =>
     array (
       'Flare' => 'Facade\\Ignition\\Facades\\Flare',
     ),
   ),
-  'fruitcake/laravel-cors' => 
+  'fruitcake/laravel-cors' =>
   array (
-    'providers' => 
+    'providers' =>
     array (
       0 => 'Fruitcake\\Cors\\CorsServiceProvider',
     ),
   ),
-  'laravel/breeze' => 
+  'laravel/breeze' =>
   array (
-    'providers' => 
+    'providers' =>
     array (
       0 => 'Laravel\\Breeze\\BreezeServiceProvider',
     ),
   ),
-  'laravel/sail' => 
+  'laravel/sail' =>
   array (
-    'providers' => 
+    'providers' =>
     array (
       0 => 'Laravel\\Sail\\SailServiceProvider',
     ),
   ),
-  'laravel/sanctum' => 
+  'laravel/sanctum' =>
   array (
-    'providers' => 
+    'providers' =>
     array (
       0 => 'Laravel\\Sanctum\\SanctumServiceProvider',
     ),
   ),
-  'laravel/tinker' => 
+  'laravel/tinker' =>
   array (
-    'providers' => 
+    'providers' =>
     array (
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
     ),
   ),
-  'nesbot/carbon' => 
+  'laravel/ui' =>
   array (
-    'providers' => 
+    'providers' =>
+    array (
+      0 => 'Laravel\\Ui\\UiServiceProvider',
+    ),
+  ),
+  'nesbot/carbon' =>
+  array (
+    'providers' =>
     array (
       0 => 'Carbon\\Laravel\\ServiceProvider',
     ),
   ),
-  'nunomaduro/collision' => 
+  'nunomaduro/collision' =>
   array (
-    'providers' => 
+    'providers' =>
     array (
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     ),

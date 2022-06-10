@@ -11,8 +11,8 @@ class Ticket extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected $fillable = ['numPlace', 'depart', 'arrivee', 'prix', 'statut', 'idClient', 'idVoyage'];
-    protected $primaryKey = 'idTicket';
+    protected $fillable = ['numPlace', 'depart', 'arrivee', 'statut', 'idClient', 'idVoyage'];
+    protected $primaryKey = 'idTickets';
 
     public function voyage() {
         return $this->belongsTo('app/Models/Voyage', 'idVoyage');
